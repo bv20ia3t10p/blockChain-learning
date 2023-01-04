@@ -1,0 +1,90 @@
+{
+	"compiler": {
+		"version": "0.8.8+commit.dddeac2f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint80",
+						"name": "roundId",
+						"type": "uint80"
+					}
+				],
+				"name": "getHistoricalPrice",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"getHistoricalPrice(uint80)": {
+					"details": "A timestamp with zero value means the round is not complete and should not be used."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"constructor": {
+					"notice": "Network: Goerli Aggregator: ETH/USD Address:\t0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e Goerli testnet"
+				},
+				"getHistoricalPrice(uint80)": {
+					"notice": "Returns historical price for a round id. roundId is NOT incremental. Not all roundIds are valid. You must know a valid roundId before consuming historical data. ROUNDID VALUES:    InValid:      18446744073709562300    Valid:        18446744073709554683"
+				}
+			},
+			"notice": "THIS IS AN EXAMPLE CONTRACT THAT USES HARDCODED VALUES FOR CLARITY. THIS IS AN EXAMPLE CONTRACT THAT USES UN-AUDITED CODE. DO NOT USE THIS CODE IN PRODUCTION.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"RemixFundMe/PriceConverter.sol": "HistoricalPriceConsumerV3"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x6e6e4b0835904509406b070ee173b5bc8f677c19421b76be38aea3b1b3d30846",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b3beaa37ee61e4ab615e250fbf01601ae481de843fd0ef55e6b44fd9d5fff8a7",
+				"dweb:/ipfs/QmeZUVwd26LzK4Mfp8Zba5JbQNkZFfTzFu1A6FVMMZDg9c"
+			]
+		},
+		"RemixFundMe/PriceConverter.sol": {
+			"keccak256": "0x7d78082ffbd6a1758ff379eb71cf974a67da51802539e2fa9d571265f8af4170",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cc53af6b343a65805a517509cf7ecf434e89f7979eafb86beb3cac25259c02db",
+				"dweb:/ipfs/QmTPyBjPnrPeG3ujojc4dndBprgswY9BtScPmXxkkh2SZY"
+			]
+		}
+	},
+	"version": 1
+}
