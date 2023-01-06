@@ -6,6 +6,20 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "NotOwner",
+				"type": "error"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -62,6 +76,30 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -100,11 +138,11 @@
 			]
 		},
 		"RemixFundMe/FundMe.sol": {
-			"keccak256": "0x83750e18e82c218e1ecffadd0c2b8e874c6c0705be709a30e4ef21d33a76b5fd",
+			"keccak256": "0x6d311f44b7e7e1d5c172009765933c66532bb223c726aabaf48bfd433497cb73",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b4c16675bb6c12ed98b973f6ca7a77610c4cd08929c72f91e8b8ccd1da20f038",
-				"dweb:/ipfs/QmRC6ZFWsoomApXyDiVXFSoSgmGRAqoc9uB72ZPCuFFw3k"
+				"bzz-raw://6dcce863f25fd770aaaa34d93ea75724a026d671c7a7080c2addef6a7653076f",
+				"dweb:/ipfs/QmRHr9Lhmx7ibRyEXx9LsJ7udgKv7tTVuLUiarG9h8AUQi"
 			]
 		},
 		"RemixFundMe/PriceConverterLib.sol": {
